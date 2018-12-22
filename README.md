@@ -6,6 +6,7 @@ To have as secure webhosting for most attacked CMS - WordPress
 ## Tols used for securing host
 
 Virtualmin
+---
 
 Chroot environment for individual virtual hosts
 PHP configuration hardening
