@@ -24,7 +24,7 @@ To have as secure webhosting for most attacked CMS - WordPress
 ### Postfix - catchall anti user enum
 
 
-## Attacking tools used for 
+## Attacking tools used for testing host security
 
 ### sqlmap
 ### smtp-user-enum
