@@ -7,6 +7,12 @@ To have as secure webhosting for most attacked CMS - WordPress
 
 ### Virtualmin
 
+### Emails
+
+#### DNSSEC
+#### DKIM, SPF
+#### Graylisting
+
 #### Chroot environment for individual virtual hosts
 
 ### PHP configuration hardening
