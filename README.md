@@ -1,7 +1,7 @@
 # secure-webhosting-infra
 
-Idea
-To have as secure webhosting for most attacked CMS - WordPress
+
+Secure Webhosting Infra serves as repo for gathering tools, techniques and How-Tos to have as secure webhosting for most attacked CMS - WordPress as only can be.
 
 ## Tols used for securing host
 
