@@ -11,16 +11,20 @@ To have as secure webhosting for most attacked CMS - WordPress
 
 ### PHP configuration hardening
 
-## Apache2 - mod_security2
-## Apache2 - mod_evasive
-## Portsentry
-## Shorewall
-## Postfix - catchall anti user enum
+### Apache2 - mod_security2
+### Apache2 - mod_evasive
+### Portsentry
+### Shorewall
+### Postfix - catchall anti user enum
 
 
 ## Attacking tools used for 
 
-## sqlmap
-## smtp-user-enum
-## nmap
-## dnsenum
+### sqlmap
+### smtp-user-enum
+### nmap
+### dnsenum
+
+## WordPress plugins
+### Sucuri
+### Loginizer
