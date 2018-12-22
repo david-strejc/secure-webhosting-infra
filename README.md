@@ -13,6 +13,8 @@ To have as secure webhosting for most attacked CMS - WordPress
 #### DKIM, SPF
 #### Graylisting
 
+#### Squid 
+
 #### Chroot environment for individual virtual hosts
 
 ### PHP configuration hardening
