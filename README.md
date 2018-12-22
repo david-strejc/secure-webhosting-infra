@@ -36,3 +36,9 @@ Secure Webhosting Infra serves as repo for gathering tools, techniques and How-T
 ## WordPress plugins
 ### Sucuri
 ### Loginizer
+
+
+## Maintanance
+
+### Backuping
+### Alerting
