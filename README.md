@@ -21,6 +21,12 @@ Secure Webhosting Infra serves as repo for gathering tools, techniques and How-T
 
 ### PHP configuration hardening
 
+* open_basedir
+* memory_limits
+* php-fpm
+* chroot environment
+
+
 ### Apache2 - mod_security2
 ### Apache2 - mod_evasive
 ### Suexec
@@ -34,6 +40,9 @@ Secure Webhosting Infra serves as repo for gathering tools, techniques and How-T
 ### sqlmap
 ### smtp-user-enum
 ### nmap
+
+Always scan your hosts with nmap before running Portsentry (Portsentry is not neccessary - but it is fun having fully secured box with assumption everyone who is scanning server using nmap is potential attacker)
+
 ### dnsenum
 
 ## WordPress plugins
