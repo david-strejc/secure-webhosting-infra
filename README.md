@@ -45,3 +45,5 @@ Secure Webhosting Infra serves as repo for gathering tools, techniques and How-T
 
 ### Backuping
 ### Alerting
+
+## Speed - why it matters
