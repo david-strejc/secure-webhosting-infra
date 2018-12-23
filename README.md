@@ -9,19 +9,38 @@ If we think about speed and time when defending webhosting server, we must say t
 
 * Attacker finds a way to inject a script through SQLi which for now is most used way of attacking website due to: http://www.atomicrbl.com/globe/
 * When script is succesfully injected and/or database of users is dumped to attackers machine, attacker wants to crack passwords and proceed with getting full control of server. This kind of action takes time. Cracking passwords and downloading scripts to host is essential for attacker. We are running our PHP sites in chrooted environment with mountbinds and Jailkits
+* Every action of an attacker requires time. We have not seen a attacker who is able to successfully inject a script into running website and immediatelly take full control of protected system. When chroot env, reverse Squid proxy and other protection mechanisms are in place it takes even longer for skilled attacker to get fammiliar with server environment. And this takes time.
+* When we incorporate tools and mechanisms such as Sucuri for protection of WordPress or OSSEC for gethering informations about our server, we got good chance to take action BEFORE attacker gets chance of proceeding further in getting control of our server.
+* Making our server as fast as only can be with responding to HTTP requests of regular users, we are saving resources for better security and protection of our box.
+* Log monitoring, alerting, file integrity checks, WAF, Squid reverse proxy and other tools gives us more time to take action which will protect us from attacker getting further in compromising our infrastructure.
+* Two way firewalls are also good practice for protection of our webservers. 
 
+# Physical servers
 
-## Tols used for securing host
+We need to find serverhousing company, which can be trusted and this is out of scope of this project. Buying our own hardware is expensive and demands our time and effort for taking care of hardware and not having maximum of "fluid" infrastructure, where we can migrate our services to any kind of provider wordlwide because of IaC (Infrastructure as Code) concept. 
+
+* Most important think when we are selecting hardware and internet infrastructure provider is DDoS protectors. This kind of service is essential for surviving not ethical kind of attack - DDoS.
+* Other kind of security threats can "probably" be defeated 
+
+## Tools used for securing host
 
 ### Virtualmin
 
 ### Emails
 
 #### DNSSEC
+
 #### DKIM, SPF
+
+* Basic email spam protection in year 2019
+
 #### Graylisting
 
-#### Fail2Ban
+* Protecting our own mailser
+
+#### SpamAssassin
+
+### Fail2Ban
 
 #### Squid 
 
@@ -36,16 +55,22 @@ Squid serves as transparent reverse proxy. Main purpose is to protect attacker f
 * php-fpm
 * chroot environment
 
-## Apache2 - 
+## Apache2
 
 ### mod_security2
 
 * rules OWASP
-* updated rules for WordPress
+* updated rules for WordPress functionality
 
 ### mod_evasive
 
+* DOS protection
+
 ### Shorewall
+
+* We need small virtual server located fully out of our infrastructure. Google or EC2 are providing small VMs for scanning our infrastructure with nmap. 
+
+
 ### Portsentry
 
 ### Postfix - catchall anti user enum
@@ -67,7 +92,11 @@ Always scan your hosts with nmap before running Portsentry (Portsentry is not ne
 
 ## Maintanance
 
+### Monitoring
+
 ### Backuping
+
 ### Alerting
+
 
 ## Speed - why it matters
