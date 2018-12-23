@@ -14,6 +14,9 @@ If we think about speed and time when defending webhosting server, we must say t
   - with Jailkits 
   - php-fpm 
   - WAF 
+  - Fail2Ban
+  - Portsentry
+  - Squid transparent reverse proxy
   - two way firewalls
   - Monitoring, logging, alerting systems in place
 * Every action of an attacker requires time. We have not seen a attacker who is able to successfully inject a script into running website and immediatelly take full control of protected system. When chroot env, reverse Squid proxy and other protection mechanisms are in place it takes even longer for skilled attacker to get fammiliar with server environment. And this takes time.
