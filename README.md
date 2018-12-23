@@ -8,7 +8,14 @@ Secure Webhosting Infra serves as repo for gathering tools, techniques and How-T
 If we think about speed and time when defending webhosting server, we must say time and speed is essential for defending our servers. Typical scenario for attacking website is as follows:
 
 * Attacker finds a way to inject a script through SQLi which for now is most used way of attacking website due to: http://www.atomicrbl.com/globe/
-* When script is succesfully injected and/or database of users is dumped to attackers machine, attacker wants to crack passwords and proceed with getting full control of server. This kind of action takes time. Cracking passwords and downloading scripts to host is essential for attacker. We are running our PHP sites in chrooted environment with mountbinds and Jailkits
+* When script is succesfully injected and/or database of users is dumped to attackers machine, attacker wants to crack passwords and proceed with getting full control of server. This kind of action takes time. Cracking passwords and downloading scripts to host is essential for attacker. We are running our PHP sites:
+  - in chrooted environment
+  - with mountbinds 
+  - with Jailkits 
+  - php-fpm 
+  - WAF 
+  - two way firewalls
+  - Monitoring, logging, alerting systems in place
 * Every action of an attacker requires time. We have not seen a attacker who is able to successfully inject a script into running website and immediatelly take full control of protected system. When chroot env, reverse Squid proxy and other protection mechanisms are in place it takes even longer for skilled attacker to get fammiliar with server environment. And this takes time.
 * When we incorporate tools and mechanisms such as Sucuri for protection of WordPress or OSSEC for gethering informations about our server, we got good chance to take action BEFORE attacker gets chance of proceeding further in getting control of our server.
 * Making our server as fast as only can be with responding to HTTP requests of regular users, we are saving resources for better security and protection of our box.
