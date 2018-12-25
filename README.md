@@ -31,7 +31,7 @@ If we think about speed and time when defending webhosting server, we must say t
 
 * One think you have is attackers time - when someone wants to really attack your servers he needs to make an effort which takes time. If we don't take bots into action, because bot attacks are simplest to defeat, skilled pentester or attacker needs to find as many services and info about your server as he only can. This takes lot of effort and time. 
 * Cloacking and masking services is nice way to trick attacker into taking wrong actions and to make a mistake which is than reported through your SIEM system.
-* Cloacking and masking services doesn't mean security by obscurity. You need to have services as secure as only can be, have as many protection mechanisms, as only can be and maintain everything up-to-date, working, patched and well maintained.
+* Cloacking and masking services doesn't mean security by obscurity. You need to have services as secure as only can be, have as many protection mechanisms, as only can be and maintain everything up-to-date, working, patched and well organized.
 * But when for example you mask all of your services as Micro$oft server, attacker expects to have a MS server to compromise. And he will use tools for exploiting M$ services. Which results into alarms in your protection system.
 
 # Physical servers
