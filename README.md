@@ -7,6 +7,8 @@ Secure Webhosting Infra serves as repo for gathering tools, techniques and How-T
 
 If we think about speed and time when defending webhosting server, we must say time and speed is essential for defending our servers. Typical scenario for attacking website is as follows:
 
+# Attack
+
 * Attacker finds a way to inject a script through SQLi which for now is most used way of attacking website due to: http://www.atomicrbl.com/globe/
 * When script is succesfully injected and/or database of users is dumped to attackers machine, attacker wants to crack passwords and proceed with getting full control of server. This kind of action takes time. Cracking passwords and downloading scripts to host is essential for attacker. We are running our PHP sites:
   - in chrooted environment
@@ -24,6 +26,13 @@ If we think about speed and time when defending webhosting server, we must say t
 * Making our server as fast as only can be with responding to HTTP requests of regular users, we are saving resources for better security and protection of our box.
 * Log monitoring, alerting, file integrity checks, WAF, Squid reverse proxy and other tools gives us more time to take action which will protect us from attacker getting further in compromising our infrastructure.
 * Two way firewalls are also good practice for protection of our webservers. 
+
+## Attackers time
+
+* One think you have is attackers time - when someone wants to really attack your servers he needs to make an effort which takes time. If we don't take bots into action, because bot attacks are simplest to defeat, skilled pentester or attacker needs to find as many services and info about your server as he only can. This takes lot of effort and time. 
+* Cloacking and masking services is nice way to trick attacker into taking wrong actions and to make a mistake which is than reported through your SIEM system.
+* Cloacking and masking services doesn't mean security by obscurity. You need to have services as secure as only can be, have as many protection mechanisms, as only can be and maintain everything up-to-date, working, patched and well maintained.
+* But when for example you mask all of your services as Micro$oft server, attacker expects to have a MS server to compromise. And he will use tools for exploiting M$ services. Which results into alarms in your protection system.
 
 # Physical servers
 
