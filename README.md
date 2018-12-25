@@ -41,11 +41,15 @@ We need to find serverhousing company, which can be trusted and this is out of s
 * Most important think when we are selecting hardware and internet infrastructure provider is DDoS protectors. This kind of service is essential for surviving not ethical kind of attack - DDoS.
 * Other kind of security threats can "probably" be defeated 
 
-## Tools used for securing host
+# Tools used for securing host
 
-### Virtualmin
+## Virtualmin
+
+* After 15 yeas spent with U*IX like operating systems I am little bit layzy. And thanks to Webmin I've started my conversion to Unix world. This tool maintains Unix philosophy and is my favorite one. It has nice cli and parses config files like an admin would do. If you are new to Linux world or want to save time - use this tool and learni its way to maintain configs, backups, security and every aspect of well configured Apache or Nignx based web server.
 
 ### Emails
+
+* Virtualmin will setup mailservers with unix users and home directories under domains
 
 #### DNSSEC
 
@@ -55,11 +59,30 @@ We need to find serverhousing company, which can be trusted and this is out of s
 
 #### Graylisting
 
-* Protecting our own mailser
+* Protecting our own mailserver from spammers whith this basic and simple technique
 
 #### SpamAssassin
 
+* Protecting our own mailserver from spammers
+
 ### Fail2Ban
+
+IDS/IPS protection system which works in tandem with Shorewall 
+
+* SSH protection agains bruteforce attacks
+* Apache DOS protection connected to mod_security2
+* Postfix mail protection agains user enumeration
+* Dovecot user login protection
+* 
+
+### Shorewall
+
+Nice wrapper with easy configuration compared to raw iptables 
+
+* We need small virtual server located fully out of our infrastructure. Google or EC2 are providing small VMs for scanning our infrastructure with nmap. 
+* Connected with Fail2Ban
+* Logging traffic
+* Not mandatory - connect Sorewall and Portsentry
 
 #### Squid 
 
@@ -67,11 +90,14 @@ Squid serves as transparent reverse proxy. Main purpose is to protect attacker f
 
 #### Chroot environment for individual virtual hosts
 
+* Jailkit
+* Chrooted environment with php-fpm PHP websites 
+
 ### PHP configuration hardening
 
-* open_basedir
+* open_basedir ??? - is this necessary?
 * memory_limits
-* php-fpm
+* php-fpm - processes limits
 * chroot environment
 
 ## Apache2
@@ -86,8 +112,6 @@ Squid serves as transparent reverse proxy. Main purpose is to protect attacker f
 * DOS protection
 
 ### Shorewall
-
-* We need small virtual server located fully out of our infrastructure. Google or EC2 are providing small VMs for scanning our infrastructure with nmap. 
 
 
 ### Portsentry
