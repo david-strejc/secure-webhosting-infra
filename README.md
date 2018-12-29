@@ -53,6 +53,8 @@ We need to find serverhousing company, which can be trusted and this is out of s
 
 #### DNSSEC
 
+* Enabled DNSSEC by default - only DS records has to be sent to domain registrar
+
 #### DKIM, SPF
 
 * Basic email spam protection in year 2019
@@ -73,7 +75,6 @@ IDS/IPS protection system which works in tandem with Shorewall
 * Apache DOS protection connected to mod_security2
 * Postfix mail protection agains user enumeration
 * Dovecot user login protection
-*  
 
 ### Shorewall
 
@@ -113,10 +114,14 @@ Squid serves as transparent reverse proxy. Main purpose is to protect attacker f
 
 ### Shorewall
 
-
 ### Portsentry
 
+* Optional tool for protection agains nmap scans - no regular server needs to make a scan against our publicaly available hosts
+* 
+
 ### Postfix - catchall anti user enum
+
+* In case of smtp user enum all email addresses are returned to attacker as valid ones. Than attacker is blocked by fail2ban system and responsible people are notified via notification systems about potential sophisticated attack.
 
 ## Attacking tools used for testing host security
 
