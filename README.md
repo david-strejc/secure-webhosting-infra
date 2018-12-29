@@ -73,7 +73,7 @@ IDS/IPS protection system which works in tandem with Shorewall
 * Apache DOS protection connected to mod_security2
 * Postfix mail protection agains user enumeration
 * Dovecot user login protection
-* 
+*  
 
 ### Shorewall
 
