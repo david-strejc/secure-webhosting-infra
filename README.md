@@ -124,6 +124,11 @@ Squid serves as transparent reverse proxy. Main purpose is to protect attacker f
 
 * In case of smtp user enum all email addresses are returned to attacker as valid ones. Than attacker is blocked by fail2ban system and responsible people are notified via notification systems about potential sophisticated attack.
 
+#### Defense against smtp-user-enum
+
+* Create catchall user for protected domain so attacker is unable to enum username, because all usernames are valid in this case
+* Create limit and rule in fail2ban ips so after too many attemps for user RCPT TO command from one ipaddress in fast rate fail2ban blocks IP from which smtp-user-enum is performed
+
 ## Attacking tools used for testing host security
 
 ### sqlmap
