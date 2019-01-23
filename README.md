@@ -2,6 +2,10 @@
 
 ![alt text](https://raw.githubusercontent.com/david-strejc/secure-webhosting-infra/master/serure-web-infra.png)
 
+# NEVER LET CONTROL OF YOUR DNS SERVERS UNDER ANYONE ELSE THAN YOU  
+
+I've encountered many "security" companies who have their DNS servers hosted by webhosting companies and calls themselfs security experts. This is madness! DNS controls your company and your life.
+
 Secure Webhosting Infra serves as repo for gathering tools, techniques and How-Tos to have as secure webhosting for most attacked CMS - WordPress as only can be. One aspect of having fast webhosting is ability to serve more requests and spare more CPU power for defeating potential threats.
 
 # Speed as main security feature 
