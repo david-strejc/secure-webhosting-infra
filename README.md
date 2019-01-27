@@ -56,6 +56,11 @@ We need to find serverhousing company, which can be trusted and this is out of s
 
 * Virtualmin will setup mailservers with unix users and home directories under domains
 
+### DNS
+
+* DNS is the most important thing in any organisation. Person, who controls DNS, controls organisation. Tools like amass and other brute force DNS enumeration tools are hard to defend. Wildcards and views are two techniques I've implemented so far.  
+
+
 #### DNSSEC
 
 * Enabled DNSSEC by default - only DS records has to be sent to domain registrar
