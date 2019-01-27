@@ -146,16 +146,29 @@ Squid serves as transparent reverse proxy. Main purpose is to protect attacker f
 
 Always scan your hosts with nmap before running Portsentry (Portsentry is not neccessary - but it is fun having fully secured box with assumption everyone who is scanning server using nmap is potential attacker)
 
-### dnsenum
+#### dnsenum
+
+#### amass
+
+## Honeypots and traps
+
+* Idea is to implement some kind of honeypot or trap onto every machine so if someone successfully bypases first line of defense and takes control of any website he/she triggers alarm by not knowing that for example executing "vulnerable" packages script triggers alarm in monitoring systems. In this situation we know someone cracked into our server and we got compromised application - most probably WordPress. 
 
 ## WordPress plugins
+
 ### Sucuri
 ### Loginizer
+### Google Invisible reCaptcha
 
 
 ## Maintanance
+### Monitoring
+
+* Monitoring is THE MOST important part of server protection. 
 
 ### Monitoring
+
+* Monitoring is THE MOST important part of server protection. 
 
 ### Backuping
 
