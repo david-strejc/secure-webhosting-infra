@@ -48,6 +48,10 @@ We need to find serverhousing company, which can be trusted and this is out of s
 
 # Tools used for securing host
 
+## Hardening 
+
+https://cisofy.com/lynis/ [to-do] - more tools
+
 ## Virtualmin
 
 * After 15 yeas spent with U*IX like operating systems I am little bit layzy. And thanks to Webmin I've started my conversion to Unix world. This tool maintains Unix philosophy and is my favorite one. It has nice cli and parses config files like an admin would do. If you are new to Linux world or want to save time - use this tool and learni its way to maintain configs, backups, security and every aspect of well configured Apache or Nignx based web server.
